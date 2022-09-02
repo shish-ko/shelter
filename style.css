@@ -57,6 +57,9 @@ body{
 	font-size: 15px;
 	line-height: 160%;
 }
+.center{
+	margin: 0 auto;
+}
 .headerFooterContainer{
 width: 100%;
 margin: 0 auto;
@@ -153,4 +156,61 @@ background-color: #FFFFFF;
 .orangeButton{
 	background-color: #F1CDB3;
 	margin-top: 42px;
+}
+section#about{
+	height: 588px;
+	padding: 80px 16.797% 100px;
+}
+.about{
+	display: flex;
+	align-items: center;
+	gap: 9.375%;	
+}
+.presentation{
+	color: #4C4C4C;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+h3{
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 130%;
+	letter-spacing: 0.06em;
+	color: #545454;
+}
+section#ourFriends{
+	padding: 80px 40px 100px;
+	background: #F6F6F6;
+	width: 100%;
+	text-align: center;
+}
+.sliderContainer{	
+	display: flex;
+	width: 100%;
+	margin: 60px auto;
+	position: relative;
+}
+
+.roundButton{
+	width: 52px;
+	height: 52px;
+	border: 2px solid #F1CDB3;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	padding-left: 17px;
+}
+.slideLeft{
+	position: absolute;	
+	left: 0;
+}
+.slideRight{
+	position: absolute;
+	right: 0;
+}
+.arrow{
+	transform: rotate(180deg)
 }
