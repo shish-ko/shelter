@@ -50,7 +50,13 @@ table {
     box-sizing: border-box;
 }
 /* CSS reset end */
-
+body{
+	font-family: 'Arial';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 160%;
+}
 .headerFooterContainer{
 width: 100%;
 margin: 0 auto;
@@ -66,7 +72,10 @@ header{
 	margin: 0 auto;
 	position: relative;
 }
-
+.mainContainer{
+	max-width: 1280px;
+	margin: 0 auto;
+}
 h1{
 	font-family: 'Georgia';
 	font-style: normal;
@@ -98,9 +107,50 @@ ul{
 	line-height: 160%;
 
 }
-.startScreen{
+.notOnly{
 	background: url(./assets/start-screen-gradient-background.png);
 	background-size: cover;
 	height: 908px;
 	min-width: 100%;
+	padding-top: 180px;	
+}
+.startContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 40px;
+}
+.startImg{
+	display: block;
+	margin-left: 42px;
+	/* width: 54.53% */
+}
+h2{
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 44px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+.propos{
+	color: #CDCDCD;
+	margin-top: 42px;
+}
+button{
+border: #F1CDB3 solid 1px;
+border-radius: 100px;
+padding: 15px 45px;
+font-family: 'Georgia';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 130%;
+letter-spacing: 0.06em;
+color: #292929;
+background-color: #FFFFFF;
+}
+.orangeButton{
+	background-color: #F1CDB3;
+	margin-top: 42px;
 }
