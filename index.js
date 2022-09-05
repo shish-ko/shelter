@@ -20,11 +20,13 @@ slideNext();
 
 const petButtons=document.querySelectorAll('.petButton');
 const petPopUp=document.querySelector('.petPopUp');
+const popUp=document.querySelector('.popUp');
+document.querySelector('.closeButton').addEventListener('click', ()=>{popUp.classList.remove('visible'), document.querySelector('.grayBG').classList.remove('visible')})
 petButtons.forEach(item=>{
    
     item.addEventListener('click', (event)=>{
-         console.log(event.target.id)
-         document.querySelector('.grayBG').classList.add('visible')
+        popUp.classList.add('visible');
+        document.querySelector('.grayBG').classList.add('visible')
         petPopUp.innerHTML=`    <img src="${pets[event.target.id].img}" alt="${pets[event.target.id].name}" class="petPopupImg">
         <div class="petInfo">
             <div class="petName">${pets[event.target.id].name}</div>

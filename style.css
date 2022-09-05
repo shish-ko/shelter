@@ -152,6 +152,7 @@ line-height: 130%;
 letter-spacing: 0.06em;
 color: #292929;
 background-color: #FFFFFF;
+
 }
 .orangeButton{
 	background-color: #F1CDB3;
@@ -202,6 +203,7 @@ section#ourFriends{
 	display: flex;
 	align-items: center;
 	padding-left: 15px;
+	cursor: pointer;
 }
 .disableButton{
 	filter: grayscale(100%);
@@ -248,14 +250,9 @@ section#ourFriends{
 .petButton:hover{
 	background-color: #F1CDB3;
 }
-.petPopUp{
-	display: flex;
+.popUp{
 	max-width: 70.3125%;
-	align-items: center;
 	z-index: 1;
-	padding-right: 10px;
-	padding-bottom: 9px;
-	/* min-width: 70.3125%;	 */
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -263,6 +260,21 @@ section#ourFriends{
 	transform: translate(-50%, -50%);
 	background: #FAFAFA;
 	border-radius: 9px;
+	display: none;
+	text-align: left;
+}
+.petPopUp{
+	display: flex;
+	width: 100%;
+	align-items: center;	
+	padding-right: 10px;
+	padding-bottom: 9px;
+	/* min-width: 70.3125%;	 */
+}
+.closeButton{
+	position: absolute;
+	right: -38px;
+	top: -52px;
 }
 .petName{
 	font-family: 'Georgia';
@@ -306,4 +318,65 @@ h4{
 }
 .visible{
 	display: block;
+}
+
+/* our Friends end */
+
+/* help start */
+
+section#help {
+	padding: 80px 50px 100px 50px;
+	text-align: center;
+	border: red 1px solid;
+}
+.helpKinds{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+	column-gap: 120px;
+	row-gap: 50px;
+	margin-top: 60px;
+}
+.helpItem{
+	/* margin-top: 60px;
+	margin-left: 120px;
+	 */
+}
+.helpItem:first-child{
+	margin-left: 0;
+}
+.helpKind{
+	font-family: 'Georgia';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 115%;
+	letter-spacing: 0.06em;	
+	color: #000000;
+	margin-top: 25px;
+}
+/* help end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+	font-family: 'Georgia';
+	src: url(./fonts/georgia.ttf);
+	font-style: normal;
+	font-weight: 400;
 }
