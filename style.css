@@ -153,6 +153,7 @@ line-height: 130%;
 letter-spacing: 0.06em;
 color: #292929;
 background-color: #FFFFFF;
+cursor: pointer;
 
 }
 .orangeButton{
@@ -249,7 +250,7 @@ section#ourFriends{
 	position: fixed;
 	top: 50%;
 	left: 50%;
-	gap: 30px;
+	
 	transform: translate(-50%, -50%);
 	background: #FAFAFA;
 	border-radius: 9px;
@@ -262,6 +263,7 @@ section#ourFriends{
 	align-items: center;	
 	padding-right: 10px;
 	padding-bottom: 9px;
+	gap: 30px;
 	/* min-width: 70.3125%;	 */
 }
 .closeButton{
@@ -378,10 +380,53 @@ section#donation{
 	color: #B2B2B2;
 	margin-top: 20px;	
 }
-/* .donationDog{
-	display: inline-block;
-} */
+
 /* donation end */
+
+
+
+/* contacts start */
+
+footer#contacts{
+	background-image: url(./assets/footer-gradient-background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;	
+}
+.contactsContainer{
+	display: flex;
+	gap: 145px;
+	padding: 3.2% 3.2% 0 3.2%;
+}
+.white{
+	color: #FFFFFF;
+}
+.footerH4{
+	color: #F1CDB3;
+	display: inline-block;
+	margin-left: 20px;
+}
+.contact{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+.location{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 64px;
+}
+.contactItem{
+	display: flex;
+	align-items: center;
+}
+
+
+
+/* contaacts end */
 
 
 
