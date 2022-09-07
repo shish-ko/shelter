@@ -10,11 +10,10 @@ for(let item in pets){
 }
 const sliderItem=document.querySelector('.sliderItem')
 const pxToScroll=sliderItem.clientWidth+((track.clientWidth-3*sliderItem.clientWidth)/2);
-console.log(pxToScroll);
 
 const nextButton=document.querySelector('.slideRight');
 const previousButton=document.querySelector('.slideLeft');
-let currentSliderPosition=-3*pxToScroll;
+let currentSliderPosition=0;
 
 slideNext();
 

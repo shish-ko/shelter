@@ -11,17 +11,17 @@
     <header>    
         <div class="headerPets">
             <div class="logo">
-                <h1 class="dark1">Cozy House</h1>
-                <div class="subtitle dark3">Shelter for pets in Boston</div>
+                <a href="./index.html"><h1 class="dark1">Cozy House</h1>
+                <div class="subtitle dark3">Shelter for pets in Boston</div></a>
 
             </div>
             <div class="menu">
                 <nav>
                     <ul>
-                        <a href='#about'><li class="listItem dark1">About the shelter</li></a>
-                        <a href='#ourFriends'><li class="listItem dark1">Our pets</li></a>
-                        <a href="#help"><li class="listItem dark1">Help the shelter</li></a>
-                        <a href=""><li class="listItem dark1">Contacts</li></a>
+                        <a href='./index.html#about'><li class="listItem dark1 li_OP">About the shelter</li></a>
+                        <a href='#OP_pets'><li class="listItem dark1 li_OP" id="current_li_OP">Our pets</li></a>
+                        <a href="./index.html#help"><li class="listItem dark1 li_OP">Help the shelter</li></a>
+                        <a href="#contacts"><li class="listItem dark1 li_OP">Contacts</li></a>
                     </ul>
                 </nav>
             </div>
@@ -46,7 +46,35 @@
         </section>
 
     </main>
-    <footer></footer>
+    <footer id="contacts">
+        
+            <div class="contactsContainer">
+                <div class="contact">
+                    <h3 class="white">For questions and suggestions</h3>
+                    <div class="contactItem">
+                        <img src="./assets/mail.png" alt="e-mail pic"> 
+                        <a href="mailto: email@shelter.com"><h4 class="footerH4">email@shelter.com</h4> </a>
+                    </div>
+                    <div class="contactItem">
+                        <img src="./assets/phone.png" alt="phone pic"> 
+                        <a href="tel: +13 674 567 75 54"><h4 class="footerH4">+13 674 567 75 54</h4></a>
+                    </div>
+                </div>
+                <div class="location">
+                    <h3 class="white">We are waiting for your visit</h3>
+                    <div class="contactItem">
+                        <img src="./assets/pin.png" alt="pin pic"> 
+                        <a href="https://www.google.com/maps/place/Kheppipet/@53.9284606,27.5638872,15z/data=!4m2!3m1!1s0x0:0x6fe3a6a5ea40aec8?sa=X&ved=2ahUKEwj7yfOM9IL6AhVPposKHeBvDN4Q_BJ6BAgdEAU&hl=en"><h4 class="footerH4">1 Central Street, Boston (entrance from the store)</h4></a>
+                    </div>
+                    <div class="contactItem">
+                        <img src="./assets/pin.png" alt="pin pic"> 
+                        <a href="https://www.google.com/maps/place/Kheppipet/@53.9284606,27.5638872,15z/data=!4m2!3m1!1s0x0:0x6fe3a6a5ea40aec8?sa=X&ved=2ahUKEwj7yfOM9IL6AhVPposKHeBvDN4Q_BJ6BAgdEAU&hl=en"><h4 class="footerH4">18 South Park, London </h4></a>
+                    </div>
+                </div>
+                <img src="./assets/footer-puppy.png" alt="puppy">
+            </div>
+        
+    </footer>
     <script src="ourPets.js" type="module"></script>    
 </body>
 </html>

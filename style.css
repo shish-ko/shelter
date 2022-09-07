@@ -102,6 +102,20 @@ ul{
 	display: flex;
 	gap: 35px;	
 }
+#current_li{
+	color: #FAFAFA;
+	border-bottom: 3px solid #F1CDB3;
+}
+#current_li_OP{
+	color: #292929;
+	border-bottom: 3px solid #F1CDB3;
+}
+.li_main:hover{
+	color: #FAFAFA
+}
+.li_OP:hover{
+	color: #292929;
+}
 .listItem{
 	color: #CDCDCD;
 	font-family: 'Arial';
@@ -159,6 +173,9 @@ cursor: pointer;
 .orangeButton{
 	background-color: #F1CDB3;
 }
+.orangeButton:hover{
+	background-color: #FDDCC4;
+}
 section#about{
 	height: 588px;
 	padding: 80px 16.797% 100px;
@@ -206,6 +223,9 @@ section#ourFriends{
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
+}
+.roundButton:hover{
+	background-color: #F1CDB3;
 }
 .disableButton{
 	filter: grayscale(100%);
@@ -507,8 +527,6 @@ section#OP_pets{
 
 @media screen and (max-width: 1279px) {
 	section#OP_pets{
-		background: #F6F6F6;
-		text-align: center;
 		padding: 10.42% 94px 10% 94px;
 	}
 	.OP_slide{
@@ -519,6 +537,18 @@ section#OP_pets{
 		background: #FAFAFA;
 		border-radius: 9px;
 		padding-bottom: 30px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section#OP_pets{
+		padding: 42px 3.2% 42px 3.2%;
+	}
+	.OP_slide{
+		column-gap: 6.89655%;		
+	}
+	.OP_petItem{
+		min-width: 100%;
 	}
 }
 
