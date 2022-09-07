@@ -204,7 +204,7 @@ section#ourFriends{
 	border-radius: 100px;
 	display: flex;
 	align-items: center;
-	padding-left: 15px;
+	justify-content: center;
 	cursor: pointer;
 }
 .disableButton{
@@ -218,7 +218,6 @@ section#ourFriends{
 	overflow: hidden;
 	position: relative;
 	max-width: 82.5%;
-	/* height: ;	 */
 }
 .track{
 	margin: 0 auto;
@@ -428,6 +427,74 @@ footer#contacts{
 
 /* contaacts end */
 
+/* our pets start */
+
+.headerPets{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 0 40px;
+}
+.dark1{
+	color: #545454;
+}
+.dark3{
+	color: #292929;
+}
+section#OP_pets{
+	background: #F6F6F6;
+	text-align: center;
+	padding: 6.3% 40px 7.9% 40px;
+}
+.OP_slider{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 100%;
+	overflow: hidden;
+}
+.OP_track{
+	display: flex;
+	flex-wrap: nowrap;
+	transition: all 1s;
+
+}
+.OP_slide{
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 3.33333333%;
+	row-gap: 30px;
+	min-width: 100%;
+}
+.OP_petItem{
+	max-width: 22.5%;
+	background: #FAFAFA;
+	border-radius: 9px;
+	padding-bottom: 30px;
+}
+.sliderButtons{
+	display: flex;
+	margin: 0 auto;
+	gap: 20px;
+	max-width: 340px;
+}
+.first{
+	background: url(./assets/last.png) no-repeat center;
+	transform: rotate(180deg);
+}
+.next{
+	background: url(./assets/next.png) no-repeat center;
+}
+.previous{
+	background: url(./assets/next.png) no-repeat center;
+	transform: rotate(180deg);
+}
+.last{
+	background: url(./assets/last.png) no-repeat center;
+}
+/* our pets end */
 
 
 
@@ -438,8 +505,22 @@ footer#contacts{
 
 
 
-
-
+@media screen and (max-width: 1279px) {
+	section#OP_pets{
+		background: #F6F6F6;
+		text-align: center;
+		padding: 10.42% 94px 10% 94px;
+	}
+	.OP_slide{
+		column-gap: 6.89655%;		
+	}
+	.OP_petItem{
+		min-width: 46.551724%;
+		background: #FAFAFA;
+		border-radius: 9px;
+		padding-bottom: 30px;
+	}
+}
 
 @font-face {
 	font-family: 'Georgia';
