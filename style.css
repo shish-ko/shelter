@@ -87,6 +87,7 @@ h1{
 	font-size: 32px;
 	line-height: 110%;
 	color: #F1CDB3;
+	letter-spacing: 0.06em;
 }
 .subtitle{
 	margin-top: 10px;
@@ -97,6 +98,7 @@ h1{
 	line-height: 15px;	
 	padding-left: 4px;
 	color: white;
+	letter-spacing: 0.1em;
 }
 ul{
 	display: flex;
@@ -128,7 +130,7 @@ ul{
 .notOnly{
 	background: url(./assets/start-screen-gradient-background.png);
 	background-size: cover;
-	height: 908px;
+	height: 100%;
 	min-width: 100%;
 	padding-top: 180px;	
 }
@@ -141,7 +143,10 @@ ul{
 .startImg{
 	display: block;
 	margin-left: 42px;
-	/* width: 54.53% */
+	width: 54.53%
+}
+.startButton2{
+	display: none;
 }
 h2{
 	font-family: 'Georgia';
@@ -176,8 +181,10 @@ cursor: pointer;
 .orangeButton:hover{
 	background-color: #FDDCC4;
 }
+
+/* about start */
+
 section#about{
-	height: 588px;
 	padding: 80px 16.797% 100px;
 }
 .about{
@@ -215,7 +222,7 @@ section#ourFriends{
 }
 
 .roundButton{
-	width: 52px;
+	min-width: 52px;
 	height: 52px;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
@@ -418,6 +425,10 @@ footer#contacts{
 	gap: 145px;
 	padding: 3.2% 3.2% 0 3.2%;
 }
+.footerImg{
+	display: block;
+	width: 23.4375%;
+}
 .white{
 	color: #FFFFFF;
 }
@@ -514,6 +525,9 @@ section#OP_pets{
 .last{
 	background: url(./assets/last.png) no-repeat center;
 }
+.footerImg_768{
+	display: none;
+}
 /* our pets end */
 
 
@@ -526,6 +540,96 @@ section#OP_pets{
 
 
 @media screen and (max-width: 1279px) {
+	.headerFooterContainer{
+		top: 30px;
+		padding: 0 30px;
+	}
+	.startContainer{
+		flex-direction: column;
+		margin-left: 20.052%;
+		margin-right: 20.052%;
+		padding: 0;
+	}
+	.startImg{
+		width: 123.695%;
+		margin-top: 100px;
+		align-self: start;
+		margin-left: 0;
+	}
+	.notOnly{
+		padding-top: 150px;
+	}
+
+	.startButton{
+		display: none;
+	}
+	.startButton2{
+		display: block;
+	}
+
+	section#about{
+		padding: 80px 22.005% 100px;
+	}
+	.about{
+		flex-direction: column;
+		gap: 80px;
+	}
+	.presentation{
+		order: -1;
+	}
+	section#ourFriends{
+		padding: 80px 30px 100px;
+	}
+	.sliderContainer{
+		gap: 0;
+		justify-content: space-between;
+	}
+	.slider{
+		max-width: 81.92%;
+	}
+	.track{
+		gap: 6.8493%;
+	}
+	.sliderItem{
+		min-width: 46.551724%
+	}
+	section#help {
+		padding: 80px 8.9843% 100px;
+	}
+	.helpKinds{
+		row-gap: 60px;
+		column-gap: 57px;
+	}
+	.helpItem{
+		min-width: 26.984%;
+	}
+	section#donation{
+		padding: 10.4% 25.26% 13.0208% ;
+		flex-direction: column;
+		gap: 60px;
+	}
+	.donationDog{
+		order: 1;
+	}
+	.bankCard{
+		width: fit-content;
+	}
+	.footerImg{
+		display: none;
+	}
+	.footerImg_768{
+		display: block;
+		align-self: flex-end;
+		width: min-content;
+	}
+	.contactsContainer{
+		padding: 3.9% 8.3% 8.3%;
+		gap: 8.3%;
+	}
+	.contact, .location{
+		height: 234px;
+		margin-bottom: 0;
+	}
 	section#OP_pets{
 		padding: 10.42% 94px 10% 94px;
 	}
