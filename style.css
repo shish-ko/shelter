@@ -222,7 +222,7 @@ section#ourFriends{
 }
 
 .roundButton{
-	width: 52px;
+	min-width: 52px;
 	height: 52px;
 	border: 2px solid #F1CDB3;
 	border-radius: 100px;
@@ -525,6 +525,9 @@ section#OP_pets{
 .last{
 	background: url(./assets/last.png) no-repeat center;
 }
+.footerImg_768{
+	display: none;
+}
 /* our pets end */
 
 
@@ -578,7 +581,8 @@ section#OP_pets{
 		padding: 80px 30px 100px;
 	}
 	.sliderContainer{
-		gap: 1.6949%;
+		gap: 0;
+		justify-content: space-between;
 	}
 	.slider{
 		max-width: 81.92%;
@@ -587,9 +591,45 @@ section#OP_pets{
 		gap: 6.8493%;
 	}
 	.sliderItem{
-		min-width: 46.2328%
+		min-width: 46.551724%
 	}
-
+	section#help {
+		padding: 80px 8.9843% 100px;
+	}
+	.helpKinds{
+		row-gap: 60px;
+		column-gap: 57px;
+	}
+	.helpItem{
+		min-width: 26.984%;
+	}
+	section#donation{
+		padding: 10.4% 25.26% 13.0208% ;
+		flex-direction: column;
+		gap: 60px;
+	}
+	.donationDog{
+		order: 1;
+	}
+	.bankCard{
+		width: fit-content;
+	}
+	.footerImg{
+		display: none;
+	}
+	.footerImg_768{
+		display: block;
+		align-self: flex-end;
+		width: min-content;
+	}
+	.contactsContainer{
+		padding: 3.9% 8.3% 8.3%;
+		gap: 8.3%;
+	}
+	.contact, .location{
+		height: 234px;
+		margin-bottom: 0;
+	}
 	section#OP_pets{
 		padding: 10.42% 94px 10% 94px;
 	}

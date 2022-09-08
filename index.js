@@ -8,9 +8,19 @@ for(let item in pets){
     <button class='petButton' id="${item}">Learn more</button>`;
     track.append(div);
 }
-const sliderItem=document.querySelector('.sliderItem')
-const pxToScroll=sliderItem.clientWidth+((track.clientWidth-3*sliderItem.clientWidth)/2);
-
+const sliderItem=document.querySelector('.sliderItem');
+function getGapWidth(){
+    const vpWidth=window.getComputedStyle(document.getElementById('body')).width;
+    if (parseInt(vpWidth) >= 1280){
+        return (track.clientWidth-3*sliderItem.clientWidth)/2;
+    } else if(parseInt(vpWidth) < 1280 && parseInt(vpWidth) >= 768){
+        return track.clientWidth-2*sliderItem.clientWidth;
+    } else {
+        return 0;
+    }
+}
+const pxToScroll=sliderItem.clientWidth+getGapWidth();
+console.log(getGapWidth())
 const nextButton=document.querySelector('.slideRight');
 const previousButton=document.querySelector('.slideLeft');
 let currentSliderPosition=0;
