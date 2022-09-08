@@ -17,11 +17,11 @@ window.addEventListener('resize', starter);
 function starter(){
     slidesQuantity=Math.ceil(pets.length/itemsPerSlide());
     firstItemAtSlide=0;
-    sliderconstructor();
+    sliderConstructer();
     sliderWidth=document.querySelector('.OP_slide').clientWidth;    
     if(shownSlide <= slidesQuantity){
      currentSliderPosition = -sliderWidth*(shownSlide-1);   
-    } else {
+    } else{
         currentSliderPosition=0;
         shownSlide=1
     }
@@ -32,7 +32,7 @@ function starter(){
 let slidesQuantity=Math.ceil(pets.length/itemsPerSlide());
 let firstItemAtSlide=0
 let shownSlide=1
-function sliderconstructor(){
+function sliderConstructer(){
     while(track.firstChild){
         track.removeChild(track.firstChild);
     }
@@ -52,7 +52,7 @@ function sliderconstructor(){
         track.append(div);
     }
 }
-sliderconstructor()
+sliderConstructer()
 
 const nextButton=document.querySelector('.next');
 const prevButton=document.querySelector('.previous');

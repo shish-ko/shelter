@@ -1,43 +1,21 @@
 import pets from "./data/ourPets.js";
 const track=document.querySelector('.track');
-let currentSliderPosition=0;
-let shownSlide=0
-window.addEventListener('resize', starter);
-function starter(){        
-    pxToScroll=sliderItem.clientWidth+getGapWidth();
-    currentSliderPosition=shownSlide * -pxToScroll;
-    track.style.transform = `translateX(${currentSliderPosition}px)`;
-    buttonListener();
-}
-
-
-for(let item in pets){        
+for(let item in pets){
     const div=document.createElement("div");
-    div.classList.add('sliderItem');
+    div.classList.add('sliderItem')
     div.innerHTML=`<img style='width: 100%' src="${pets[item].img}" alt="${pets[item].name}">
     <div class="type">${pets[item].name}</div>
     <button class='petButton' id="${item}">Learn more</button>`;
     track.append(div);
 }
+const sliderItem=document.querySelector('.sliderItem')
+const pxToScroll=sliderItem.clientWidth+((track.clientWidth-3*sliderItem.clientWidth)/2);
 
-
-const sliderItem=document.querySelector('.sliderItem');
-function getGapWidth(){
-    const vpWidth=window.getComputedStyle(document.getElementById('body')).width;
-    if (parseInt(vpWidth) >= 1280){
-        return (track.clientWidth-3*sliderItem.clientWidth)/2;
-    } else if(parseInt(vpWidth) < 1280 && parseInt(vpWidth) >= 768){
-        return track.clientWidth-2*sliderItem.clientWidth;
-    } else {
-        return 0;
-    }
-}
-let pxToScroll=sliderItem.clientWidth+getGapWidth();
-console.log(sliderItem.clientWidth)
 const nextButton=document.querySelector('.slideRight');
 const previousButton=document.querySelector('.slideLeft');
+let currentSliderPosition=0;
 
-
+slideNext();
 
 const petButtons=document.querySelectorAll('.petButton');
 const petPopUp=document.querySelector('.petPopUp');
@@ -65,26 +43,23 @@ function buttonListener(){
     } else {
         previousButton.addEventListener('click', slidePrev)
     }
-    if(currentSliderPosition===-pxToScroll*(8-Math.floor(track.clientWidth/sliderItem.clientWidth))){
+    if(currentSliderPosition===-pxToScroll*5){
         nextButton.classList.add('disableButton');
         nextButton.removeEventListener('click', slideNext)
     } else{
         nextButton.addEventListener('click', slideNext);
     }
 }
-buttonListener();
 
 function slideNext(){  
     currentSliderPosition=currentSliderPosition-pxToScroll;      
     track.style.transform = `translateX(${currentSliderPosition}px)`;
-    buttonListener();
-    shownSlide+=1;
+    buttonListener()
 }
 function slidePrev(){    
     currentSliderPosition=currentSliderPosition+pxToScroll;    
     track.style.transform = `translateX(${currentSliderPosition}px)`;
-    buttonListener();
-    shownSlide-=1;
+    buttonListener()
 }
 
 
