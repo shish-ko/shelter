@@ -216,9 +216,9 @@ section#ourFriends{
 .sliderContainer{	
 	display: flex;
 	align-items: center;
-	width: 100%;
 	margin: 60px auto;
-	gap: 52px;
+	/* gap: 52px; */
+	justify-content: space-between;
 }
 
 .roundButton{
@@ -248,9 +248,18 @@ section#ourFriends{
 }
 .track{
 	margin: 0 auto;
-	display: flex;
-	gap: 9.09090909%;
+	display: flex;	
+	/* transition: all .5s; */
+	min-width: 100%;
+}
+.moveNext{
+	/* transform: translateX(-100%); */
 	transition: all .5s;
+}
+.slideDiv{
+	display: flex;
+	justify-content: space-between;
+	min-width: 100%;
 }
 .sliderItem{
 	min-width: 27.27272727%;
@@ -580,18 +589,16 @@ section#OP_pets{
 	section#ourFriends{
 		padding: 80px 30px 100px;
 	}
-	.sliderContainer{
-		gap: 0;
-		justify-content: space-between;
-	}
+	
 	.slider{
 		max-width: 81.92%;
 	}
-	.track{
-		gap: 6.8493%;
-	}
+
 	.sliderItem{
-		min-width: 46.551724%
+		min-width: 46.55%
+	}
+	.popUp{
+		min-width: 82%;
 	}
 	section#help {
 		padding: 80px 8.9843% 100px;
